@@ -1,0 +1,193 @@
+.offer {
+  display: grid;
+  grid-template-columns:
+    minmax(6rem, 1fr)
+    minmax(min-content, 140rem)
+    minmax(6rem, 1fr);
+  padding-top: 8rem;
+
+  &__heading {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  &__content {
+    grid-column: 2/3;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__1 {
+    background-image: url(../img/tour1x1000.jpg);
+    background-image: -webkit-image-set(
+      url("../img/tour1x500.jpg") 1x,
+      url("../img/tour1x1000.jpg") 2x
+    );
+    background-image: image-set(
+      url("../img/tour1x500.jpg") 1x,
+      url("../img/tour1x1000.jpg") 2x
+    );
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__2 {
+    background-image: url(../img/tour2x1000.jpg);
+    background-image: -webkit-image-set(
+      url("../img/tour2x500.jpg") 1x,
+      url("../img/tour2x1000.jpg") 2x
+    );
+    background-image: image-set(
+      url("../img/tour2x500.jpg") 1x,
+      url("../img/tour2x1000.jpg") 2x
+    );
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__3 {
+    background-image: url(../img/tour3x1000.jpg);
+    background-image: -webkit-image-set(
+      url("../img/tour3x500.jpg") 1x,
+      url("../img/tour3x1000.jpg") 2x
+    );
+    background-image: image-set(
+      url("../img/tour3x500.jpg") 1x,
+      url("../img/tour3x1000.jpg") 2x
+    );
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__4 {
+    background-image: url(../img/tour4x1000.jpg);
+    background-image: -webkit-image-set(
+      url("../img/tour4x500.jpg") 1x,
+      url("../img/tour4x1000.jpg") 2x
+    );
+    background-image: image-set(
+      url("../img/tour4x500.jpg") 1x,
+      url("../img/tour4x1000.jpg") 2x
+    );
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__5 {
+    background-image: url(../img/tour5x1000.jpg);
+    background-image: -webkit-image-set(
+      url("../img/tour5x500.jpg") 1x,
+      url("../img/tour5x1000.jpg") 2x
+    );
+    background-image: image-set(
+      url("../img/tour5x500.jpg") 1x,
+      url("../img/tour5x1000.jpg") 2x
+    );
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__6 {
+    background-image: url(../img/tour6x1000.jpg);
+    background-image: -webkit-image-set(
+      url("../img/tour6x500.jpg") 1x,
+      url("../img/tour6x1000.jpg") 2x
+    );
+    background-image: image-set(
+      url("../img/tour6x500.jpg") 1x,
+      url("../img/tour6x1000.jpg") 2x
+    );
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__7 {
+    background-image: url(../img/tour7x1000.jpg);
+    background-image: -webkit-image-set(
+      url("../img/tour7x500.jpg") 1x,
+      url("../img/tour7x1000.jpg") 2x
+    );
+    background-image: image-set(
+      url("../img/tour7x500.jpg") 1x,
+      url("../img/tour7x1000.jpg") 2x
+    );
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__8 {
+    background-image: url(../img/tour8x1000.jpg);
+    background-image: -webkit-image-set(
+      url("../img/tour8x500.jpg") 1x,
+      url("../img/tour8x1000.jpg") 2x
+    );
+    background-image: image-set(
+      url("../img/tour8x500.jpg") 1x,
+      url("../img/tour8x1000.jpg") 2x
+    );
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__9 {
+    background-image: url(../img/tour9x1000.jpg);
+    background-image: -webkit-image-set(
+      url("../img/tour9x500.jpg") 1x,
+      url("../img/tour9x1000.jpg") 2x
+    );
+    background-image: image-set(
+      url("../img/tour9x500.jpg") 1x,
+      url("../img/tour9x1000.jpg") 2x
+    );
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__10 {
+    background-image: url(../img/tour10x1000.jpg);
+    background-image: -webkit-image-set(
+      url("../img/tour10x500.jpg") 1x,
+      url("../img/tour10x1000.jpg") 2x
+    );
+    background-image: image-set(
+      url("../img/tour10x500.jpg") 1x,
+      url("../img/tour10x1000.jpg") 2x
+    );
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__11 {
+    background-image: url(../img/tour11x1000.jpg);
+    background-image: -webkit-image-set(
+      url("../img/tour11x500.jpg") 1x,
+      url("../img/tour11x1000.jpg") 2x
+    );
+    background-image: image-set(
+      url("../img/tour11x500.jpg") 1x,
+      url("../img/tour11x1000.jpg") 2x
+    );
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__12 {
+    background-image: url(../img/tour12x1000.jpg);
+    background-image: -webkit-image-set(
+      url("../img/tour12x500.jpg") 1x,
+      url("../img/tour12x1000.jpg") 2x
+    );
+    background-image: image-set(
+      url("../img/tour12x500.jpg") 1x,
+      url("../img/tour12x1000.jpg") 2x
+    );
+    background-size: cover;
+    background-position: center;
+  }
+}

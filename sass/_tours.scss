@@ -1,0 +1,796 @@
+.tour {
+  display: grid;
+  grid-template-columns:
+    minmax(6rem, 1fr)
+    minmax(min-content, 120rem)
+    minmax(6rem, 1fr);
+  padding-top: 12rem;
+
+  @media only screen and (max-width: $bp-565) {
+    grid-template-columns:
+      minmax(2rem, 1fr)
+      minmax(min-content, 50rem)
+      minmax(2rem, 1fr);
+  }
+
+  &__content {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+
+    position: relative;
+  }
+
+  &__header {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    background-color: $color-white;
+    box-shadow: 0 0.4rem 2rem rgba($color-dark-text, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+
+    @media only screen and (max-width: $bp-1260) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media only screen and (max-width: $bp-700) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 2fr;
+      height: 85vh;
+    }
+  }
+
+  &__pic {
+    background-size: cover;
+    background-position: center;
+
+    @media only screen and (max-width: $bp-700) {
+      grid-row: 1/2;
+    }
+
+    &--1 {
+      background-image: url(../img/tour1x2800.jpg);
+      background-image: -webkit-image-set(
+        url("../img/tour1x1400.jpg") 1x,
+        url("../img/tour1x2800.jpg") 2x
+      );
+      background-image: image-set(
+        url("../img/tour1x1400.jpg") 1x,
+        url("../img/tour1x2800.jpg") 2x
+      );
+    }
+
+    &--2 {
+      background-image: url(../img/tour2x2800.jpg);
+      background-image: -webkit-image-set(
+        url("../img/tour2x1400.jpg") 1x,
+        url("../img/tour2x2800.jpg") 2x
+      );
+      background-image: image-set(
+        url("../img/tour2x1400.jpg") 1x,
+        url("../img/tour2x2800.jpg") 2x
+      );
+    }
+
+    &--3 {
+      background-image: url(../img/tour1x2800.jpg);
+      background-image: -webkit-image-set(
+        url("../img/tour3x1400.jpg") 1x,
+        url("../img/tour3x2800.jpg") 2x
+      );
+      background-image: image-set(
+        url("../img/tour3x1400.jpg") 1x,
+        url("../img/tour3x2800.jpg") 2x
+      );
+    }
+
+    &--4 {
+      background-image: url(../img/tour4x2800.jpg);
+      background-image: -webkit-image-set(
+        url("../img/tour4x1400.jpg") 1x,
+        url("../img/tour4x2800.jpg") 2x
+      );
+      background-image: image-set(
+        url("../img/tour4x1400.jpg") 1x,
+        url("../img/tour4x2800.jpg") 2x
+      );
+    }
+
+    &--5 {
+      background-image: url(../img/tour5x2800.jpg);
+      background-image: -webkit-image-set(
+        url("../img/tour5x1400.jpg") 1x,
+        url("../img/tour5x2800.jpg") 2x
+      );
+      background-image: image-set(
+        url("../img/tour5x1400.jpg") 1x,
+        url("../img/tour5x2800.jpg") 2x
+      );
+    }
+
+    &--6 {
+      background-image: url(../img/tour6x2800.jpg);
+      background-image: -webkit-image-set(
+        url("../img/tour6x1400.jpg") 1x,
+        url("../img/tour6x2800.jpg") 2x
+      );
+      background-image: image-set(
+        url("../img/tour6x1400.jpg") 1x,
+        url("../img/tour6x2800.jpg") 2x
+      );
+    }
+
+    &--7 {
+      background-image: url(../img/tour7x2800.jpg);
+      background-image: -webkit-image-set(
+        url("../img/tour7x1400.jpg") 1x,
+        url("../img/tour7x2800.jpg") 2x
+      );
+      background-image: image-set(
+        url("../img/tour7x1400.jpg") 1x,
+        url("../img/tour7x2800.jpg") 2x
+      );
+    }
+
+    &--8 {
+      background-image: url(../img/tour8x2800.jpg);
+      background-image: -webkit-image-set(
+        url("../img/tour8x1400.jpg") 1x,
+        url("../img/tour8x2800.jpg") 2x
+      );
+      background-image: image-set(
+        url("../img/tour8x1400.jpg") 1x,
+        url("../img/tour8x2800.jpg") 2x
+      );
+    }
+
+    &--9 {
+      background-image: url(../img/tour9x2800.jpg);
+      background-image: -webkit-image-set(
+        url("../img/tour9x1400.jpg") 1x,
+        url("../img/tour9x2800.jpg") 2x
+      );
+      background-image: image-set(
+        url("../img/tour9x1400.jpg") 1x,
+        url("../img/tour9x2800.jpg") 2x
+      );
+    }
+
+    &--10 {
+      background-image: url(../img/tour10x2800.jpg);
+      background-image: -webkit-image-set(
+        url("../img/tour10x1400.jpg") 1x,
+        url("../img/tour10x2800.jpg") 2x
+      );
+      background-image: image-set(
+        url("../img/tour10x1400.jpg") 1x,
+        url("../img/tour10x2800.jpg") 2x
+      );
+    }
+
+    &--11 {
+      background-image: url(../img/tour11x2800.jpg);
+      background-image: -webkit-image-set(
+        url("../img/tour11x1400.jpg") 1x,
+        url("../img/tour11x2800.jpg") 2x
+      );
+      background-image: image-set(
+        url("../img/tour11x1400.jpg") 1x,
+        url("../img/tour11x2800.jpg") 2x
+      );
+    }
+
+    &--12 {
+      background-image: url(../img/tour12x2800.jpg);
+      background-image: -webkit-image-set(
+        url("../img/tour12x1400.jpg") 1x,
+        url("../img/tour12x2800.jpg") 2x
+      );
+      background-image: image-set(
+        url("../img/tour12x1400.jpg") 1x,
+        url("../img/tour12x2800.jpg") 2x
+      );
+    }
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem;
+
+    @media only screen and (max-width: $bp-700) {
+      grid-row: 2/3;
+
+      display: grid;
+      grid-template-columns: max-content 1fr max-content;
+      grid-template-rows: 3.5rem repeat(6, max-content);
+
+      gap: 1rem;
+      padding: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-565) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &--save {
+      position: absolute;
+      top: 2.5rem;
+      right: 2.5rem;
+      background-color: transparent;
+      height: 5rem;
+      width: 5rem;
+      border-radius: 50%;
+      border: none;
+
+      &:hover {
+        background-color: rgba($color-white, 0.6);
+      }
+    }
+
+    &--links {
+      display: flex;
+      gap: 0.5rem;
+
+      @media only screen and (max-width: $bp-700) {
+        grid-row: 1/2;
+        grid-column: 1/2;
+      }
+    }
+    &--link {
+      text-decoration: none;
+      color: $color-white;
+      font-size: 1.5rem;
+      background-color: $color-primary;
+      padding: 1rem 2rem;
+      border-radius: 25px;
+
+      &:hover,
+      &:active {
+        background-color: rgba($color-primary, 0.95);
+      }
+    }
+
+    &--title {
+      @media only screen and (max-width: $bp-700) {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        align-self: flex-end;
+      }
+
+      @media only screen and (max-width: $bp-565) {
+        align-self: flex-start;
+      }
+    }
+
+    &--days {
+      display: flex;
+      gap: 5rem;
+      @media only screen and (max-width: $bp-700) {
+        grid-row: 3/4;
+        grid-column: 1/3;
+      }
+    }
+
+    &--star {
+      display: flex;
+      gap: 1rem;
+    }
+
+    &--starts {
+      @media only screen and (max-width: $bp-700) {
+        grid-row: 5/6;
+        grid-column: 1/-1;
+      }
+    }
+
+    &--keywords {
+      display: flex;
+      gap: 0.5rem;
+
+      @media only screen and (max-width: $bp-700) {
+        grid-row: 6/7;
+        grid-column: 1/-1;
+      }
+    }
+    &--keyword {
+      text-decoration: none;
+      color: $color-dark-text;
+      font-size: 1.3rem;
+      font-weight: 300;
+      background-color: $color-white-text;
+      padding: 1rem 2rem;
+      border-radius: 25px;
+
+      @media only screen and (max-width: $bp-1440) {
+        font-size: 1.1rem;
+        padding: 0.8rem 1.2rem;
+      }
+
+      &:hover,
+      &:active {
+        background-color: rgba($color-white-text, 0.8);
+      }
+    }
+    &--description {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 3fr 3fr;
+
+      @media only screen and (max-width: $bp-700) {
+        grid-row: 7/8;
+        grid-column: 1/-1;
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+      }
+    }
+    &--price {
+      display: flex;
+      justify-content: space-evenly;
+      gap: 4rem;
+
+      @media only screen and (max-width: $bp-700) {
+        grid-row: 1/4;
+        grid-column: -2/-1;
+
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+    &--euro {
+      align-self: center;
+      font-size: 4rem;
+      color: $color-primary;
+    }
+    &--btn {
+      padding: 2rem 5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @media only screen and (max-width: $bp-700) {
+        padding: 2rem 3.5rem;
+      }
+    }
+  }
+
+  &__description {
+    padding: 0 5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+
+    @media only screen and (max-width: $bp-1260) {
+      padding: 0;
+    }
+  }
+
+  &__checklist {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    padding-left: 10rem;
+
+    @media only screen and (max-width: $bp-1260) {
+      padding-left: 4rem;
+    }
+
+    @media only screen and (max-width: $bp-565) {
+      grid-template-columns: repeat(2, 1fr);
+
+      padding: 0 1rem;
+      gap: 1rem;
+    }
+
+    &--flex {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+  }
+
+  &__location {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    &--stops,
+    &--start {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+
+  &__reviews {
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    position: relative;
+
+    @media only screen and (max-width: $bp-700) {
+      padding-top: 4rem;
+    }
+  }
+
+  &__slider {
+    margin-top: 6rem;
+    max-width: 100%;
+    height: 50rem;
+
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media only screen and (max-width: $bp-831) {
+      height: 42rem;
+    }
+  }
+
+  &__slides {
+    padding: 0 7rem;
+
+    position: absolute;
+    top: 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 4rem;
+
+    transition: transform 1s;
+    pointer-events: none;
+
+    @media only screen and (max-width: $bp-700) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media only screen and (max-width: $bp-565) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__testimonial {
+    max-width: max-content;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    &--img {
+      width: 100%;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+
+    &--description {
+      padding: 0 1.3rem;
+    }
+  }
+
+  &__next,
+  &__prev {
+    position: absolute;
+    top: 40%;
+
+    border: none;
+    background-color: transparent;
+  }
+
+  &__prev {
+    left: 0;
+  }
+
+  &__next {
+    right: 0;
+  }
+}
+
+.map {
+  height: 400px;
+  width: 100%;
+  background-color: $color-light-shades;
+
+  @media only screen and (max-width: $bp-1260) {
+    height: 300px;
+  }
+}
+
+.comments {
+  padding: 2rem 9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @media only screen and (max-width: $bp-700) {
+    padding: 0;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    gap: 2rem;
+
+    @media only screen and (max-width: $bp-831) {
+      grid-template-columns: max-content 1fr;
+      grid-template-rows: 2fr 1fr;
+      row-gap: 0;
+    }
+  }
+  &__img {
+    grid-column: 1/2;
+    background-image: url(../img/user.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
+    box-shadow: 0 0.4rem 2rem rgba($color-dark-text, 0.1);
+
+    @media only screen and (max-width: $bp-831) {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+
+    @media only screen and (max-width: $bp-700) {
+      height: 6rem;
+      width: 6rem;
+    }
+  }
+
+  &__inputs {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    @media only screen and (max-width: $bp-831) {
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+  }
+
+  &__input {
+    border: none;
+    box-shadow: 0 0.4rem 2rem rgba($color-dark-text, 0.1);
+
+    padding: 1rem;
+    width: 100%;
+
+    &--name {
+      height: 4rem;
+
+      &:focus {
+        outline: none;
+        border-bottom: 1px solid rgba($color-dark-text, 0.8);
+      }
+    }
+    &--comment {
+      height: 8rem;
+      &:focus {
+        outline: none;
+        border-top: 1px solid rgba($color-dark-text, 0.8);
+      }
+    }
+  }
+
+  &__post {
+    grid-column: 3/4;
+    align-self: flex-end;
+    height: 8rem;
+    padding: 2rem 6rem;
+    border-radius: 2px;
+
+    @media only screen and (max-width: $bp-831) {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      padding: 0;
+    }
+  }
+}
+
+.user {
+  padding: 2rem 4rem;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 2rem;
+
+  @media only screen and (max-width: $bp-831) {
+    padding: 2rem 0 0 4rem;
+  }
+
+  @media only screen and (max-width: $bp-700) {
+    padding: 0;
+  }
+
+  &__img {
+    grid-column: 1/2;
+    background-image: url(../img/user.png);
+    background-size: cover;
+    background-position: center;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    box-shadow: 0 0.4rem 2rem rgba($color-dark-text, 0.1);
+
+    pointer-events: none;
+
+    &--1 {
+      background-image: url(../img/u/u1.jpg);
+    }
+    &--2 {
+      background-image: url(../img/u/u2.jpg);
+    }
+    &--3 {
+      background-image: url(../img/u/u3.jpg);
+    }
+    &--4 {
+      background-image: url(../img/u/u4.jpg);
+    }
+    &--5 {
+      background-image: url(../img/u/u5.jpg);
+    }
+    &--6 {
+      background-image: url(../img/u/u6.jpg);
+    }
+    &--7 {
+      background-image: url(../img/u/u7.jpg);
+    }
+    &--8 {
+      background-image: url(../img/u/u8.jpg);
+    }
+    &--9 {
+      background-image: url(../img/u/u9.jpg);
+    }
+    &--10 {
+      background-image: url(../img/u/u10.jpg);
+    }
+    &--11 {
+      background-image: url(../img/u/u11.jpg);
+    }
+    &--12 {
+      background-image: url(../img/u/u12.jpg);
+    }
+    &--13 {
+      background-image: url(../img/u/u13.jpg);
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+  }
+  &__text {
+    grid-column: 2/3;
+    padding: 0.3rem 2rem;
+    height: max-content;
+    word-wrap: break-word;
+
+    &--name {
+      border-bottom: 1px solid rgba($color-dark-text, 0.2);
+      font-weight: 500;
+    }
+  }
+
+  &__icons {
+    padding-left: 2rem;
+    display: flex;
+    gap: 7rem;
+    position: relative;
+    cursor: pointer;
+
+    &--like {
+      position: absolute;
+      top: 0.3rem;
+      left: 6rem;
+      cursor: pointer;
+    }
+
+    &--comment {
+      position: absolute;
+      top: 0.3rem;
+      left: 22rem;
+      cursor: pointer;
+    }
+  }
+}
+
+.activeLinkText {
+  color: $color-primary;
+  text-decoration: underline;
+}
+
+.newUserIcon {
+  height: 2.4rem;
+  width: 2.4rem;
+  background-image: url(../img/newHeart.png);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0.1rem;
+  left: 5.7rem;
+}
+
+.newUserIconActive {
+  height: 2.4rem;
+  width: 2.4rem;
+  background-image: url(../img/newHeartActive.png);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0.1rem;
+  left: 5.7rem;
+}
+
+.newUserComment {
+  height: 2.4rem;
+  width: 2.4rem;
+  background-image: url(../img/newComment.png);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0.1rem;
+  left: 22rem;
+}
+.newUserCommentActive {
+  height: 2.4rem;
+  width: 2.4rem;
+  background-image: url(../img/newCommentActive.png);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0.1rem;
+  left: 22rem;
+}
+
+//slider
+
+.swiper {
+  width: 90rem;
+  height: 45rem;
+
+  @media only screen and (max-width: $bp-1000) {
+    width: 75rem;
+  }
+
+  @media only screen and (max-width: $bp-831) {
+    width: 65rem;
+  }
+
+  @media only screen and (max-width: $bp-700) {
+    width: 45rem;
+  }
+
+  @media only screen and (max-width: $bp-565) {
+    width: 35rem;
+    height: 50rem;
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  border: none;
+  background-color: transparent;
+  color: $color-dark-text !important;
+  fill: $color-dark-text !important;
+  stroke: $color-dark-text !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  position: absolute;
+  top: 15rem;
+
+  @media only screen and (max-width: $bp-831) {
+    top: 10rem;
+  }
+}

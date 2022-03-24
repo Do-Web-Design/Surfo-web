@@ -1,0 +1,109 @@
+.icon {
+  &__save {
+    height: 2.5rem;
+    width: 2.5rem;
+    color: rgba($color-dark-text, 0.8);
+    transition: all 0.2s;
+
+    &--nav {
+      height: 5rem;
+      width: 3rem;
+      transition: all 0.2s;
+
+      &:hover,
+      &:active {
+        color: $color-secondary;
+      }
+    }
+  }
+  &__next {
+    height: 6rem;
+    width: 6rem;
+    cursor: pointer;
+
+    &--white {
+      color: $color-white-text;
+
+      &:hover {
+        color: $color-white;
+      }
+    }
+
+    &--dark {
+      color: rgba($color-dark-text, 0.7);
+
+      &:hover {
+        color: rgba($color-dark-text, 0.8);
+      }
+    }
+  }
+  &__star {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &__stars {
+    width: 2rem;
+    height: 2rem;
+    color: $color-secondary;
+  }
+
+  &__level {
+    height: 1rem;
+  }
+
+  &__social {
+    width: 2.4rem;
+    height: 2.4rem;
+    color: $color-light-text;
+  }
+
+  &__log {
+    width: 2.4rem;
+    height: 2.4rem;
+    color: $color-light-text;
+  }
+
+  &__check {
+    width: 3rem;
+    height: 3rem;
+    color: $color-primary;
+  }
+
+  &__user {
+    height: 2rem;
+    width: 2rem;
+    color: rgba($color-dark-text, 0.8);
+  }
+
+  &__heart {
+    height: 1.8rem;
+    width: 1.8rem;
+  }
+}
+
+.close {
+  &:link,
+  &:visited {
+    color: $color-white;
+    background-color: $color-secondary;
+    position: absolute;
+    top: -1.7rem;
+    right: -1.5rem;
+    font-size: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    color: $color-dark-text;
+  }
+}
+
+.colorYellow {
+  color: $color-secondary;
+  fill: $color-secondary;
+}

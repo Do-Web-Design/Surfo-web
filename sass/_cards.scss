@@ -1,0 +1,451 @@
+.cards {
+  grid-column: 2/-2;
+
+  &__large {
+    padding-top: 4rem;
+    margin: 6rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+    gap: 6rem;
+
+    @media only screen and (max-width: $bp-831) {
+      grid-template-columns: 1fr 50rem 1fr;
+      margin: 0rem;
+      gap: 0rem;
+    }
+
+    @media only screen and (max-width: $bp-565) {
+      grid-template-columns: 1fr 80% 1fr;
+    }
+  }
+
+  &__section {
+    display: grid;
+    grid-row: max-content max-content;
+    grid-column: 1fr;
+    margin-bottom: 5rem;
+
+    &--heading {
+      grid-row: 1/2;
+      margin: 0 6rem;
+    }
+  }
+
+  &__small {
+    grid-row: 2/3;
+    margin: 6rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap: 5rem;
+
+    &--searched {
+      grid-row: 2/3;
+      margin: 6rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(26rem, 28rem));
+      gap: 5rem;
+    }
+  }
+
+  &__medium {
+    grid-row: 2/3;
+    margin: 6rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+    gap: 5rem;
+  }
+}
+
+.cardLarge {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  border-radius: 50px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0.4rem 1rem rgba($color-dark-text, 0.05);
+
+  overflow: hidden;
+  position: relative;
+
+  &__1 {
+    background-image: url(../img/tour1Ax1400.jpg);
+    background-image: -webkit-image-set(
+      url("../img/tour1Ax800.jpg") 1x,
+      url("../img/tour1Ax1400.jpg") 2x
+    );
+    background-image: image-set(
+      url("../img/tour1Ax800.jpg") 1x,
+      url("../img/tour1Ax1400.jpg") 2x
+    );
+
+    &--picA {
+      background-image: url(../img/tour1x1400.jpg);
+      background-image: -webkit-image-set(
+        url("../img/tour1x800.jpg") 1x,
+        url("../img/tour1x1400.jpg") 2x
+      );
+      background-image: image-set(
+        url("../img/tour1x800.jpg") 1x,
+        url("../img/tour1x1400.jpg") 2x
+      );
+    }
+    &--picB {
+      background-image: url(../img/tour1Cx1400.jpg);
+      background-image: -webkit-image-set(
+        url("../img/tour1Cx800.jpg") 1x,
+        url("../img/tour1Cx1400.jpg") 2x
+      );
+      background-image: image-set(
+        url("../img/tour1Cx800.jpg") 1x,
+        url("../img/tour1Cx1400.jpg") 2x
+      );
+    }
+  }
+  &__2 {
+    background-image: url(../img/tour2x1400.jpg);
+    background-image: -webkit-image-set(
+      url("../img/tour2x800.jpg") 1x,
+      url("../img/tour2x1400.jpg") 2x
+    );
+    background-image: image-set(
+      url("../img/tour2x800.jpg") 1x,
+      url("../img/tour2x1400.jpg") 2x
+    );
+
+    &--picA {
+      background-image: url(../img/tour2Bx1400.jpg);
+      background-image: -webkit-image-set(
+        url("../img/tour2Bx800.jpg") 1x,
+        url("../img/tour2Bx1400.jpg") 2x
+      );
+      background-image: image-set(
+        url("../img/tour2Bx800.jpg") 1x,
+        url("../img/tour2Bx1400.jpg") 2x
+      );
+    }
+    &--picB {
+      background-image: url(../img/tour2Cx1400.jpg);
+      background-image: -webkit-image-set(
+        url("../img/tour2Cx800.jpg") 1x,
+        url("../img/tour2Cx1400.jpg") 2x
+      );
+      background-image: image-set(
+        url("../img/tour2Cx800.jpg") 1x,
+        url("../img/tour2Cx1400.jpg") 2x
+      );
+    }
+  }
+  &__3 {
+    background-image: url(../img/tour3x1400.jpg);
+    background-image: -webkit-image-set(
+      url("../img/tour3x800.jpg") 1x,
+      url("../img/tour3x1400.jpg") 2x
+    );
+    background-image: image-set(
+      url("../img/tour3x800.jpg") 1x,
+      url("../img/tour3x1400.jpg") 2x
+    );
+
+    &--picA {
+      background-image: url(../img/tour3Bx1400.jpg);
+      background-image: -webkit-image-set(
+        url("../img/tour3Bx800.jpg") 1x,
+        url("../img/tour3Bx1400.jpg") 2x
+      );
+      background-image: image-set(
+        url("../img/tour3Bx800.jpg") 1x,
+        url("../img/tour3Bx1400.jpg") 2x
+      );
+    }
+    &--picB {
+      background-image: url(../img/tour3Cx1400.jpg);
+      background-image: -webkit-image-set(
+        url("../img/tour3Cx800.jpg") 1x,
+        url("../img/tour3Cx1400.jpg") 2x
+      );
+      background-image: image-set(
+        url("../img/tour3Cx800.jpg") 1x,
+        url("../img/tour3Cx1400.jpg") 2x
+      );
+    }
+  }
+
+  &__save {
+    background-color: rgba($color-white, 0.6);
+    border: none;
+    height: 3rem;
+    width: 3rem;
+    padding: 1.2rem;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+
+    z-index: 200;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba($color-white, 0.7);
+    }
+  }
+  &__next {
+    border: none;
+    background-color: rgba($color-white, 0);
+
+    position: absolute;
+    top: 35%;
+    right: 1.5rem;
+
+    z-index: 200;
+  }
+  &__details {
+    margin: 1.5rem;
+    padding: 3rem 3rem 1.5rem 3rem;
+    background-color: rgba($color-primary, 0.8);
+    border-radius: 50px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    &--h2::after {
+      content: "";
+      height: 1px;
+      display: block;
+      background-color: $color-white;
+      margin: 1rem 0;
+    }
+    &--description {
+      padding: 1rem 2rem 2rem 2rem;
+    }
+  }
+
+  &__icon {
+    color: $color-white-text;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+
+    z-index: 200;
+  }
+}
+
+.cardSmall {
+  border-radius: 4px;
+  box-shadow: 0 0.4rem 2rem rgba($color-dark-text, 0.1);
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  overflow: hidden;
+  position: relative;
+
+  &__1 {
+    background-image: url(../img/tour4x1000.jpg);
+    background-image: -webkit-image-set(
+      url("../img/tour4x500.jpg") 1x,
+      url("../img/tour4x1000.jpg") 2x
+    );
+    background-image: image-set(
+      url("../img/tour4x500.jpg") 1x,
+      url("../img/tour4x1000.jpg") 2x
+    );
+    background-size: cover;
+    background-position: bottom;
+  }
+  &__2 {
+    background-image: url(../img/tour5x1000.jpg);
+    background-image: -webkit-image-set(
+      url("../img/tour5x500.jpg") 1x,
+      url("../img/tour5x1000.jpg") 2x
+    );
+    background-image: image-set(
+      url("../img/tour5x500.jpg") 1x,
+      url("../img/tour5x1000.jpg") 2x
+    );
+    background-size: cover;
+    background-position: bottom;
+  }
+  &__3 {
+    background-image: url(../img/tour6x1000.jpg);
+    background-image: -webkit-image-set(
+      url("../img/tour6x500.jpg") 1x,
+      url("../img/tour6x1000.jpg") 2x
+    );
+    background-image: image-set(
+      url("../img/tour6x500.jpg") 1x,
+      url("../img/tour6x1000.jpg") 2x
+    );
+    background-size: cover;
+    background-position: center;
+  }
+  &__4 {
+    background-image: url(../img/tour7x1000.jpg);
+    background-image: -webkit-image-set(
+      url("../img/tour7x500.jpg") 1x,
+      url("../img/tour7x1000.jpg") 2x
+    );
+    background-image: image-set(
+      url("../img/tour7x500.jpg") 1x,
+      url("../img/tour7x1000.jpg") 2x
+    );
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__save {
+    border: none;
+    background-color: rgba($color-white, 0.6);
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 0.8rem;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+
+    z-index: 200;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba($color-white, 0.7);
+    }
+  }
+
+  &__details {
+    padding: 2.5rem 2.5rem 1.5rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+.cardMedium {
+  box-shadow: 0 0.4rem 2rem rgba($color-dark-text, 0.1);
+  border-radius: 4px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  position: relative;
+  overflow: hidden;
+
+  &__1 {
+    background-image: url(../img/tour8x1000.jpg);
+    background-image: -webkit-image-set(
+      url("../img/tour8x500.jpg") 1x,
+      url("../img/tour8x1000.jpg") 2x
+    );
+    background-image: image-set(
+      url("../img/tour8x500.jpg") 1x,
+      url("../img/tour8x1000.jpg") 2x
+    );
+    background-size: cover;
+    background-position: center;
+  }
+  &__2 {
+    background-image: url(../img/tour9x1000.jpg);
+    background-image: -webkit-image-set(
+      url("../img/tour9x500.jpg") 1x,
+      url("../img/tour9x1000.jpg") 2x
+    );
+    background-image: image-set(
+      url("../img/tour9x500.jpg") 1x,
+      url("../img/tour9x1000.jpg") 2x
+    );
+    background-size: cover;
+    background-position: bottom;
+  }
+  &__3 {
+    background-image: url(../img/tour10x1000.jpg);
+    background-image: -webkit-image-set(
+      url("../img/tour10x500.jpg") 1x,
+      url("../img/tour10x1000.jpg") 2x
+    );
+    background-image: image-set(
+      url("../img/tour10x500.jpg") 1x,
+      url("../img/tour10x1000.jpg") 2x
+    );
+    background-size: cover;
+    background-position: top;
+  }
+
+  &__details {
+    padding: 2.5rem 2.5rem 1.5rem 2.5rem;
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr max-content;
+
+    &--description,
+    &--opinion {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      gap: 1.5rem;
+      padding-bottom: 2rem;
+    }
+    &--btn {
+      grid-column: 1/-1;
+      grid-row: 2/3;
+    }
+  }
+}
+
+.slider {
+  max-width: 50rem;
+  height: 72rem;
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+
+  @media only screen and (max-width: $bp-831) {
+    grid-column: 2/3;
+    align-items: center;
+  }
+}
+
+.checkbox {
+  display: none;
+}
+
+@media only screen and (max-width: $bp-1260) {
+  .cardLargeHidden,
+  .cardSmallHidden {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@media only screen and (max-width: $bp-1000) {
+  .cardMediumHidden {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@media only screen and (max-width: $bp-831) {
+  .cardSmallHidden {
+    display: grid;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .cardLargeHidden2 {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+}

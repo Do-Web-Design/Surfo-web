@@ -1,0 +1,72 @@
+.btn {
+  display: inline-block;
+  font-family: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+
+  &__main,
+  &__main:link,
+  &__main:visited {
+    border: none;
+    background-color: $color-secondary;
+    color: $color-white;
+    font-size: 2rem;
+    font-weight: 600;
+    border-radius: 2px 0 0 2px;
+    transition: all 0.2s;
+  }
+  &__main:hover {
+    box-shadow: 0 0 6px rgba($color-dark-text, 0.2);
+  }
+
+  &__main--add {
+    padding: 1.7rem 7rem;
+    border-radius: 4px;
+
+    &__main:hover {
+      box-shadow: 0 0 6px rgba($color-dark-text, 0.2);
+    }
+  }
+
+  &__secondary,
+  &__secondary:link,
+  &__secondary:visited {
+    border: none;
+    border-radius: 25px;
+    padding: 1.7rem 1rem;
+    color: rgba($color-dark-text, 0.8);
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    box-shadow: 0 0.5rem 1rem rgba($color-dark-text, 0.2);
+  }
+
+  &__secondary--white {
+    background-color: rgba($color-white, 0.8);
+    transition: transform 0.2s;
+    transition: background-color 0.3s;
+  }
+
+  &__secondary--white:hover {
+    background-color: rgba($color-primary, 0.8);
+    color: $color-white-text;
+    box-shadow: 0 0.5rem 1.2rem rgba($color-dark-text, 0.3);
+    transform: scale(1.01);
+  }
+
+  &__secondary--sea {
+    background-color: rgba($color-primary, 0.8);
+    color: $color-white-text;
+    transition: transform 0.2s;
+    transition: background-color 0.3s;
+  }
+
+  &__secondary--sea:hover {
+    background-color: rgba($color-white, 0.8);
+    color: $color-dark-text;
+    box-shadow: 0 0.5rem 1.2rem rgba($color-dark-text, 0.3);
+    transform: scale(1.01);
+  }
+}
