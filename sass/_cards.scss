@@ -70,7 +70,7 @@
   position: relative;
 
   @media only screen and (max-width: $bp-320) {
-    border-radius: 35px;
+    border-radius: 0px;
   }
 
   &__1 {
@@ -422,6 +422,10 @@
   @media only screen and (max-width: $bp-831) {
     grid-column: 2/3;
     align-items: center;
+  }
+
+  @media only screen and (max-width: $bp-320) {
+    border-radius: 35px;
   }
 }
 

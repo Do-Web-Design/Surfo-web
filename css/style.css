@@ -16,7 +16,7 @@ html {
       font-size: 40%; } }
   @media only screen and (max-width: 20em) {
     html {
-      font-size: 30%; } }
+      font-size: 25%; } }
 
 body {
   font-family: "Rubik", sans-serif;
@@ -679,8 +679,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   cursor: pointer; }
   @media only screen and (max-width: 35.31em) {
     input[type="date"]::-webkit-calendar-picker-indicator {
-      background-image: none;
-      width: 0; } }
+      visibility: hidden;
+      display: none; } }
 
 .cta {
   grid-column: 1/-1;
@@ -836,7 +836,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   position: relative; }
   @media only screen and (max-width: 20em) {
     .cardLarge {
-      border-radius: 35px; } }
+      border-radius: 0px; } }
   .cardLarge__1 {
     background-image: url(../img/tour1Ax1400.jpg);
     background-image: -webkit-image-set(url("../img/tour1Ax800.jpg") 1x, url("../img/tour1Ax1400.jpg") 2x);
@@ -1027,6 +1027,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .slider {
       grid-column: 2/3;
       align-items: center; } }
+  @media only screen and (max-width: 20em) {
+    .slider {
+      border-radius: 35px; } }
 
 .checkbox {
   display: none; }
@@ -1724,6 +1727,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     box-shadow: 0 0.4rem 2rem rgba(22, 22, 22, 0.1);
     padding: 1rem;
     width: 100%; }
+    @media only screen and (max-width: 35.31em) {
+      .comments__input {
+        font-size: 8px; } }
+    @media only screen and (max-width: 35.31em) {
+      .comments__input {
+        font-size: 5px; } }
     .comments__input--name {
       height: 4rem; }
       .comments__input--name:focus {
@@ -1820,6 +1829,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       top: 0.3rem;
       left: 22rem;
       cursor: pointer; }
+      @media only screen and (max-width: 20em) {
+        .user__icons--comment {
+          left: 25rem; } }
 
 .activeLinkText {
   color: #3a9696;

@@ -495,8 +495,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
 
   @media only screen and (max-width: $bp-565) {
-    background-image: none;
-    width: 0;
+    visibility: hidden;
+    display: none;
   }
 }
 
