@@ -14,6 +14,9 @@ html {
   @media only screen and (max-width: 24.375em) {
     html {
       font-size: 40%; } }
+  @media only screen and (max-width: 20em) {
+    html {
+      font-size: 30%; } }
 
 body {
   font-family: "Rubik", sans-serif;
@@ -532,7 +535,8 @@ body {
           grid-column: 1/-1; } }
     .search__item--depart {
       grid-row: 2/3;
-      grid-column: 2/3; }
+      grid-column: 2/3;
+      width: 100%; }
       @media only screen and (max-width: 62.5em) {
         .search__item--depart {
           grid-row: 2/3;
@@ -547,7 +551,8 @@ body {
           grid-column: 1/2; } }
     .search__item--return {
       grid-row: 2/3;
-      grid-column: 3/4; }
+      grid-column: 3/4;
+      width: 100%; }
       @media only screen and (max-width: 62.5em) {
         .search__item--return {
           grid-row: 2/3;
@@ -613,7 +618,7 @@ body {
   -webkit-border-radius: 0 3px 3px 0;
   -moz-border-radius: 0 3px 3px 0;
   border-radius: 0px 3px 3px 0;
-  height: 4rem;
+  height: 100%;
   width: 4rem; }
 
 .select2.select2-container.select2-container--open
@@ -627,7 +632,7 @@ body {
 .select2-search--inline
 .select2-search__field {
   margin-top: 0;
-  height: 332px; }
+  height: 50rem; }
 
 .select2.select2-container
 .select2-selection--multiple
@@ -635,8 +640,7 @@ body {
   display: block;
   padding: 0 4px;
   line-height: 29px;
-  font-size: 1.4rem;
-  height: 35rem; }
+  font-size: 0.4rem; }
 
 .select2-container .select2-dropdown {
   border: none;
@@ -653,9 +657,6 @@ body {
 
 .select2-container .select2-dropdown .select2-results {
   padding: 0; }
-
-.select2-container .select2-dropdown .select2-results ul li:first-child {
-  display: none; }
 
 .select2-container
 .select2-dropdown
@@ -676,6 +677,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   height: 30px;
   border-width: thin;
   cursor: pointer; }
+  @media only screen and (max-width: 35.31em) {
+    input[type="date"]::-webkit-calendar-picker-indicator {
+      background-image: none;
+      width: 0; } }
 
 .cta {
   grid-column: 1/-1;
@@ -829,6 +834,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   box-shadow: 0 0.4rem 1rem rgba(22, 22, 22, 0.05);
   overflow: hidden;
   position: relative; }
+  @media only screen and (max-width: 20em) {
+    .cardLarge {
+      border-radius: 35px; } }
   .cardLarge__1 {
     background-image: url(../img/tour1Ax1400.jpg);
     background-image: -webkit-image-set(url("../img/tour1Ax800.jpg") 1x, url("../img/tour1Ax1400.jpg") 2x);
@@ -877,6 +885,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     right: 2.5rem;
     z-index: 200;
     cursor: pointer; }
+    @media only screen and (max-width: 20em) {
+      .cardLarge__save {
+        top: 3.5rem;
+        right: 3.5rem; } }
     .cardLarge__save:hover {
       background-color: rgba(255, 255, 255, 0.7); }
   .cardLarge__next {
@@ -894,6 +906,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: flex;
     flex-direction: column;
     gap: 0.8rem; }
+    @media only screen and (max-width: 20em) {
+      .cardLarge__details {
+        border-radius: 35px; } }
     .cardLarge__details--h2::after {
       content: "";
       height: 1px;
@@ -1245,7 +1260,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-image: image-set(url("../img/cta-1400.jpg") 1x, url("../img/cta-2000.jpg") 2x);
     background-position: center;
     background-size: cover;
-    height: 60vh;
+    min-height: 15rem;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -1340,9 +1355,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-size: cover;
     background-position: center; }
   .offer__11 {
-    background-image: url(../img/tour11x1000.jpg);
-    background-image: -webkit-image-set(url("../img/tour11x500.jpg") 1x, url("../img/tour11x1000.jpg") 2x);
-    background-image: image-set(url("../img/tour11x500.jpg") 1x, url("../img/tour11x1000.jpg") 2x);
+    background-image: url(../img/tour11x800.jpg);
+    background-image: -webkit-image-set(url("../img/tour11x500.jpg") 1x, url("../img/tour11x1400.jpg") 2x);
+    background-image: image-set(url("../img/tour11x500.jpg") 1x, url("../img/tour11x1400.jpg") 2x);
     background-size: cover;
     background-position: center; }
   .offer__12 {
@@ -1375,27 +1390,30 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     @media only screen and (max-width: 78.75em) {
       .tour__header {
         grid-template-columns: 1fr 1fr; } }
+    @media only screen and (max-width: 51.95em) {
+      .tour__header {
+        grid-template-columns: 1fr 1.2fr; } }
     @media only screen and (max-width: 43.75em) {
       .tour__header {
         grid-template-columns: 1fr;
-        grid-template-rows: 2fr;
-        height: 85vh; } }
+        grid-template-rows: 2fr; } }
   .tour__pic {
     background-size: cover;
-    background-position: center; }
+    background-position: center;
+    min-height: 30rem; }
     @media only screen and (max-width: 43.75em) {
       .tour__pic {
         grid-row: 1/2; } }
     .tour__pic--1 {
       background-image: url(../img/tour1x2800.jpg);
-      background-image: -webkit-image-set(url("../img/tour1x1400.jpg") 1x, url("../img/tour1x2800.jpg") 2x);
-      background-image: image-set(url("../img/tour1x1400.jpg") 1x, url("../img/tour1x2800.jpg") 2x); }
+      background-image: -webkit-image-set(url("../img/tour1x2000.jpg") 1x, url("../img/tour1x2800.jpg") 2x);
+      background-image: image-set(url("../img/tour1x2000.jpg") 1x, url("../img/tour1x2800.jpg") 2x); }
     .tour__pic--2 {
       background-image: url(../img/tour2x2800.jpg);
       background-image: -webkit-image-set(url("../img/tour2x1400.jpg") 1x, url("../img/tour2x2800.jpg") 2x);
       background-image: image-set(url("../img/tour2x1400.jpg") 1x, url("../img/tour2x2800.jpg") 2x); }
     .tour__pic--3 {
-      background-image: url(../img/tour1x2800.jpg);
+      background-image: url(../img/tour3x2800.jpg);
       background-image: -webkit-image-set(url("../img/tour3x1400.jpg") 1x, url("../img/tour3x2800.jpg") 2x);
       background-image: image-set(url("../img/tour3x1400.jpg") 1x, url("../img/tour3x2800.jpg") 2x); }
     .tour__pic--4 {
@@ -1438,9 +1456,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    padding: 3rem; }
+    padding: 3rem;
+    height: 65rem; }
+    @media only screen and (max-width: 51.95em) {
+      .tour__details {
+        height: 70rem; } }
     @media only screen and (max-width: 43.75em) {
       .tour__details {
+        height: 43rem;
         grid-row: 2/3;
         display: grid;
         grid-template-columns: max-content 1fr max-content;
@@ -1449,6 +1472,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         padding: 2rem; } }
     @media only screen and (max-width: 35.31em) {
       .tour__details {
+        height: 54rem;
         display: flex;
         flex-direction: column; } }
     .tour__details--save {
@@ -1852,25 +1876,53 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       width: 65rem; } }
   @media only screen and (max-width: 43.75em) {
     .swiper {
-      width: 45rem; } }
+      width: 43rem;
+      height: 50rem; } }
   @media only screen and (max-width: 35.31em) {
     .swiper {
-      width: 35rem;
-      height: 50rem; } }
+      width: 33rem;
+      height: 44rem; } }
+  @media only screen and (max-width: 24.375em) {
+    .swiper {
+      width: 27rem; } }
+  @media only screen and (max-width: 20em) {
+    .swiper {
+      width: 30rem; } }
 
 .swiper-button-next,
 .swiper-button-prev {
   border: none;
   background-color: transparent;
-  color: #161616 !important;
-  fill: #161616 !important;
-  stroke: #161616 !important; }
+  color: #aaa !important; }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
+  font-size: 4rem !important;
   position: absolute;
-  top: 15rem; }
+  top: 11rem; }
+  @media only screen and (max-width: 62.5em) {
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      top: 7rem; } }
   @media only screen and (max-width: 51.95em) {
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      top: 5rem; } }
+  @media only screen and (max-width: 43.75em) {
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      top: 1.5rem; } }
+  @media only screen and (max-width: 35.31em) {
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      top: 2rem;
+      font-size: 2.5rem !important; } }
+  @media only screen and (max-width: 24.375em) {
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      top: 8rem;
+      font-size: 3rem !important; } }
+  @media only screen and (max-width: 20em) {
     .swiper-button-next::after,
     .swiper-button-prev::after {
       top: 10rem; } }

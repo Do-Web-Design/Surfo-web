@@ -36,11 +36,17 @@ document
 //layout select options in search bar with select2.js
 
 $(document).ready(function () {
-  $(".select__type").select2({});
+  $(".select__type").select2({
+    placeholder: "Adventure with us",
+    allowClear: true,
+  });
 });
 
 $(document).ready(function () {
-  $(".select__where").select2();
+  $(".select__where").select2({
+    placeholder: "Island",
+    allowClear: true,
+  });
 });
 
 // click btn Go in search Bar

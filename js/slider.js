@@ -25,9 +25,8 @@ for (let i = 1; i <= 3; i++) {
 
 function sliderTestimonial(swiperContainer, next, prev) {
   let swiper = new Swiper(swiperContainer, {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    slidesPerGroup: 3,
+    slidesPerView: 1,
+    spaceBetween: 1,
     loop: true,
     loopFillGroupWithBlank: true,
 
@@ -35,40 +34,18 @@ function sliderTestimonial(swiperContainer, next, prev) {
       nextEl: next,
       prevEl: prev,
     },
+
+    breakpoints: {
+      420: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      700: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
   });
-
-  if (
-    window.matchMedia("(min-width : 35.31em)").matches &&
-    window.matchMedia("(max-width : 43.75em)").matches
-  ) {
-    let swiper = new Swiper(swiperContainer, {
-      slidesPerView: 2,
-      spaceBetween: 30,
-      slidesPerGroup: 2,
-      loop: true,
-      loopFillGroupWithBlank: true,
-
-      navigation: {
-        nextEl: next,
-        prevEl: prev,
-      },
-    });
-  }
-
-  if (window.matchMedia("(max-width : 35.31em)").matches) {
-    let swiper = new Swiper(swiperContainer, {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      slidesPerGroup: 1,
-      loop: true,
-      loopFillGroupWithBlank: true,
-
-      navigation: {
-        nextEl: next,
-        prevEl: prev,
-      },
-    });
-  }
 }
 
 for (let i = 1; i <= 12; i++) {

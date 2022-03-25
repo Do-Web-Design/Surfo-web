@@ -317,6 +317,7 @@
     &--depart {
       grid-row: 2/3;
       grid-column: 2/3;
+      width: 100%;
 
       @media only screen and (max-width: $bp-1000) {
         grid-row: 2/3;
@@ -337,6 +338,7 @@
     &--return {
       grid-row: 2/3;
       grid-column: 3/4;
+      width: 100%;
 
       @media only screen and (max-width: $bp-1000) {
         grid-row: 2/3;
@@ -422,7 +424,7 @@
   -webkit-border-radius: 0 3px 3px 0;
   -moz-border-radius: 0 3px 3px 0;
   border-radius: 0px 3px 3px 0;
-  height: 4rem;
+  height: 100%;
   width: 4rem;
 }
 
@@ -438,7 +440,7 @@
   .select2-search--inline
   .select2-search__field {
   margin-top: 0;
-  height: 332px;
+  height: 50rem;
 }
 
 .select2.select2-container
@@ -447,8 +449,8 @@
   display: block;
   padding: 0 4px;
   line-height: 29px;
-  font-size: 1.4rem;
-  height: 35rem;
+  font-size: 0.4rem;
+  // height: 50rem;
 }
 
 .select2-container .select2-dropdown {
@@ -457,6 +459,7 @@
   font-size: 1.5rem;
   font-weight: 500;
   color: $color-dark-text;
+  // height: 50rem;
 }
 
 .select2-container .select2-dropdown .select2-search input {
@@ -469,10 +472,6 @@
 .select2-container .select2-dropdown .select2-results {
   padding: 0;
 }
-
-// .select2-container .select2-dropdown .select2-results ul li:first-child {
-//   display: none;
-// }
 
 .select2-container
   .select2-dropdown
@@ -494,6 +493,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   height: 30px;
   border-width: thin;
   cursor: pointer;
+
+  @media only screen and (max-width: $bp-565) {
+    background-image: none;
+    width: 0;
+  }
 }
 
 .cta {

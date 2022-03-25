@@ -69,6 +69,10 @@
   overflow: hidden;
   position: relative;
 
+  @media only screen and (max-width: $bp-320) {
+    border-radius: 35px;
+  }
+
   &__1 {
     background-image: url(../img/tour1Ax1400.jpg);
     background-image: -webkit-image-set(
@@ -187,6 +191,11 @@
     z-index: 200;
     cursor: pointer;
 
+    @media only screen and (max-width: $bp-320) {
+      top: 3.5rem;
+      right: 3.5rem;
+    }
+
     &:hover {
       background-color: rgba($color-white, 0.7);
     }
@@ -210,6 +219,10 @@
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
+
+    @media only screen and (max-width: $bp-320) {
+      border-radius: 35px;
+    }
 
     &--h2::after {
       content: "";

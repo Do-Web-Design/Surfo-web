@@ -34,16 +34,20 @@
       grid-template-columns: 1fr 1fr;
     }
 
+    @media only screen and (max-width: $bp-831) {
+      grid-template-columns: 1fr 1.2fr;
+    }
+
     @media only screen and (max-width: $bp-700) {
       grid-template-columns: 1fr;
       grid-template-rows: 2fr;
-      height: 85vh;
     }
   }
 
   &__pic {
     background-size: cover;
     background-position: center;
+    min-height: 30rem;
 
     @media only screen and (max-width: $bp-700) {
       grid-row: 1/2;
@@ -52,11 +56,11 @@
     &--1 {
       background-image: url(../img/tour1x2800.jpg);
       background-image: -webkit-image-set(
-        url("../img/tour1x1400.jpg") 1x,
+        url("../img/tour1x2000.jpg") 1x,
         url("../img/tour1x2800.jpg") 2x
       );
       background-image: image-set(
-        url("../img/tour1x1400.jpg") 1x,
+        url("../img/tour1x2000.jpg") 1x,
         url("../img/tour1x2800.jpg") 2x
       );
     }
@@ -74,7 +78,7 @@
     }
 
     &--3 {
-      background-image: url(../img/tour1x2800.jpg);
+      background-image: url(../img/tour3x2800.jpg);
       background-image: -webkit-image-set(
         url("../img/tour3x1400.jpg") 1x,
         url("../img/tour3x2800.jpg") 2x
@@ -199,8 +203,15 @@
     flex-direction: column;
     gap: 3rem;
     padding: 3rem;
+    height: 65rem;
+
+    @media only screen and (max-width: $bp-831) {
+      height: 70rem;
+    }
 
     @media only screen and (max-width: $bp-700) {
+      height: 43rem;
+
       grid-row: 2/3;
 
       display: grid;
@@ -212,6 +223,8 @@
     }
 
     @media only screen and (max-width: $bp-565) {
+      height: 54rem;
+
       display: flex;
       flex-direction: column;
     }
@@ -767,12 +780,21 @@
   }
 
   @media only screen and (max-width: $bp-700) {
-    width: 45rem;
+    width: 43rem;
+    height: 50rem;
   }
 
   @media only screen and (max-width: $bp-565) {
-    width: 35rem;
-    height: 50rem;
+    width: 33rem;
+    height: 44rem;
+  }
+
+  @media only screen and (max-width: $bp-390) {
+    width: 27rem;
+  }
+
+  @media only screen and (max-width: $bp-320) {
+    width: 30rem;
   }
 }
 
@@ -780,17 +802,38 @@
 .swiper-button-prev {
   border: none;
   background-color: transparent;
-  color: $color-dark-text !important;
-  fill: $color-dark-text !important;
-  stroke: $color-dark-text !important;
+  color: $color-grey-shades !important;
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
+  font-size: 4rem !important;
   position: absolute;
-  top: 15rem;
+  top: 11rem;
+
+  @media only screen and (max-width: $bp-1000) {
+    top: 7rem;
+  }
 
   @media only screen and (max-width: $bp-831) {
+    top: 5rem;
+  }
+
+  @media only screen and (max-width: $bp-700) {
+    top: 1.5rem;
+  }
+
+  @media only screen and (max-width: $bp-565) {
+    top: 2rem;
+    font-size: 2.5rem !important;
+  }
+
+  @media only screen and (max-width: $bp-390) {
+    top: 8rem;
+    font-size: 3rem !important;
+  }
+
+  @media only screen and (max-width: $bp-320) {
     top: 10rem;
   }
 }
