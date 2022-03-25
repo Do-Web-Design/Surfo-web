@@ -16,7 +16,10 @@ html {
       font-size: 40%; } }
   @media only screen and (max-width: 20em) {
     html {
-      font-size: 25%; } }
+      font-size: 30%; } }
+  @media only screen and (max-width: 13.75em) {
+    html {
+      font-size: 24%; } }
 
 body {
   font-family: "Rubik", sans-serif;
@@ -548,7 +551,8 @@ body {
       @media only screen and (max-width: 35.31em) {
         .search__item--depart {
           grid-row: 4/5;
-          grid-column: 1/2; } }
+          grid-column: 1/2;
+          width: 100%; } }
     .search__item--return {
       grid-row: 2/3;
       grid-column: 3/4;
@@ -564,7 +568,8 @@ body {
       @media only screen and (max-width: 35.31em) {
         .search__item--return {
           grid-row: 4/5;
-          grid-column: 2/3; } }
+          grid-column: 2/3;
+          width: 100%; } }
   .search__btn {
     grid-row: 2/3;
     grid-column: 4/5; }
@@ -713,6 +718,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   @media only screen and (max-width: 35.31em) {
     .footer {
       grid-template-columns: minmax(3rem, 1fr) minmax(40rem, 140rem) minmax(3rem, 1fr); } }
+  @media only screen and (max-width: 20em) {
+    .footer {
+      grid-template-columns: minmax(2rem, 1fr) minmax(20rem, 40rem) minmax(2rem, 1fr); } }
   .footer__content {
     grid-column: 2/-2;
     display: grid;
@@ -736,7 +744,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     gap: 4.3rem; }
     .footer__media--links {
       display: flex;
-      gap: 2rem; }
+      gap: 2rem;
+      list-style: none; }
     .footer__media--logo {
       height: 4rem;
       margin-left: -1.2rem;
@@ -779,7 +788,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .footer__nav {
     display: flex;
     flex-direction: column;
-    gap: 1.6rem; }
+    gap: 1.6rem;
+    list-style: none; }
 
 .cards {
   grid-column: 2/-2; }
@@ -1724,15 +1734,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         grid-row: 1/2; } }
   .comments__input {
     border: none;
-    box-shadow: 0 0.4rem 2rem rgba(22, 22, 22, 0.1);
+    box-shadow: 0 0.4rem 2rem rgba(22, 22, 22, 0.3);
     padding: 1rem;
-    width: 100%; }
-    @media only screen and (max-width: 35.31em) {
-      .comments__input {
-        font-size: 8px; } }
-    @media only screen and (max-width: 35.31em) {
-      .comments__input {
-        font-size: 5px; } }
+    width: 100%;
+    font-size: inherit; }
     .comments__input--name {
       height: 4rem; }
       .comments__input--name:focus {
@@ -1832,6 +1837,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       @media only screen and (max-width: 20em) {
         .user__icons--comment {
           left: 25rem; } }
+      @media only screen and (max-width: 13.75em) {
+        .user__icons--comment {
+          left: 26rem; } }
 
 .activeLinkText {
   color: #3a9696;
@@ -1866,6 +1874,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   position: absolute;
   top: 0.1rem;
   left: 22rem; }
+  @media only screen and (max-width: 13.75em) {
+    .newUserComment {
+      left: 25.5rem; } }
 
 .newUserCommentActive {
   height: 2.4rem;
@@ -1876,6 +1887,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   position: absolute;
   top: 0.1rem;
   left: 22rem; }
+  @media only screen and (max-width: 13.75em) {
+    .newUserCommentActive {
+      left: 25.5rem; } }
 
 .swiper {
   width: 90rem;

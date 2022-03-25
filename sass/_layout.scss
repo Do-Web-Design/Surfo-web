@@ -332,6 +332,7 @@
       @media only screen and (max-width: $bp-565) {
         grid-row: 4/5;
         grid-column: 1/2;
+        width: 100%;
       }
     }
 
@@ -353,6 +354,7 @@
       @media only screen and (max-width: $bp-565) {
         grid-row: 4/5;
         grid-column: 2/3;
+        width: 100%;
       }
     }
   }
@@ -557,6 +559,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       minmax(3rem, 1fr);
   }
 
+  @media only screen and (max-width: $bp-320) {
+    grid-template-columns:
+      minmax(2rem, 1fr)
+      minmax(20rem, 40rem)
+      minmax(2rem, 1fr);
+  }
+
   &__content {
     grid-column: 2/-2;
     display: grid;
@@ -587,6 +596,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     &--links {
       display: flex;
       gap: 2rem;
+      list-style: none;
     }
     &--logo {
       height: 4rem;
@@ -646,5 +656,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
+    list-style: none;
   }
 }
