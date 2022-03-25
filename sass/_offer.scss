@@ -6,6 +6,13 @@
     minmax(6rem, 1fr);
   padding-top: 8rem;
 
+  @media only screen and (max-width: $bp-565) {
+    grid-template-columns:
+      minmax(2rem, 1fr)
+      minmax(min-content, 50rem)
+      minmax(2rem, 1fr);
+  }
+
   &__heading {
     padding-top: 2rem;
     display: flex;

@@ -46,7 +46,7 @@ html {
   }
 
   @media only screen and (max-width: $bp-220) {
-    font-size: 24%;
+    font-size: 22%;
   }
 }
 
@@ -91,18 +91,11 @@ body {
       minmax(2rem, 1fr);
   }
 
-  @media only screen and (max-width: $bp-831) {
+  @media only screen and (max-width: $bp-565) {
     grid-template-columns:
       minmax(2rem, 1fr)
-      minmax(min-content, 140rem)
+      minmax(min-content, 50rem)
       minmax(2rem, 1fr);
-  }
-
-  @media only screen and (max-width: $bp-390) {
-    grid-template-columns:
-      minmax(0rem, 1fr)
-      minmax(min-content, 140rem)
-      minmax(0rem, 1fr);
   }
 }
 
