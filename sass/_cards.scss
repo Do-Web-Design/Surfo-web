@@ -1,6 +1,10 @@
 .cards {
   grid-column: 2/-2;
 
+  @media only screen and (max-width: $bp-831) {
+    grid-column: 1/-1;
+  }
+
   &__large {
     padding-top: 4rem;
     margin: 6rem;
@@ -9,13 +13,8 @@
     gap: 6rem;
 
     @media only screen and (max-width: $bp-831) {
-      grid-template-columns: 1fr 50rem 1fr;
-      margin: 0rem;
-      gap: 0rem;
-    }
-
-    @media only screen and (max-width: $bp-565) {
-      grid-template-columns: 1fr 80% 1fr;
+      justify-items: center;
+      gap: 0;
     }
   }
 
@@ -78,10 +77,6 @@
 
   overflow: hidden;
   position: relative;
-
-  @media only screen and (max-width: $bp-320) {
-    border-radius: 0px;
-  }
 
   &__1 {
     background-image: url(../img/tour1Ax1400.jpg);
@@ -200,6 +195,11 @@
 
     z-index: 200;
     cursor: pointer;
+
+    @media only screen and (max-width: $bp-700) {
+      height: 2rem;
+      width: 2rem;
+    }
 
     @media only screen and (max-width: $bp-320) {
       top: 3.5rem;
@@ -336,6 +336,11 @@
     z-index: 200;
     cursor: pointer;
 
+    @media only screen and (max-width: $bp-700) {
+      height: 2rem;
+      width: 2rem;
+    }
+
     &:hover {
       background-color: rgba($color-white, 0.7);
     }
@@ -432,6 +437,10 @@
   @media only screen and (max-width: $bp-831) {
     grid-column: 2/3;
     align-items: center;
+  }
+
+  @media only screen and (max-width: $bp-565) {
+    max-width: 38rem;
   }
 
   @media only screen and (max-width: $bp-320) {

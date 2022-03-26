@@ -104,7 +104,7 @@
     }
 
     @media only screen and (max-width: $bp-565) {
-      width: 80%;
+      width: 100%;
     }
 
     &--login {
@@ -206,6 +206,17 @@
 
     padding: 5rem 5rem 2rem 5rem;
     text-align: center;
+
+    @media only screen and (max-width: $bp-1000) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @media only screen and (max-width: $bp-565) {
+      width: 100%;
+    }
 
     &--form {
       display: flex;

@@ -239,6 +239,11 @@
       border-radius: 50%;
       border: none;
 
+      @media only screen and (max-width: $bp-700) {
+        height: 3rem;
+        width: 3rem;
+      }
+
       &:hover {
         background-color: rgba($color-white, 0.6);
       }
@@ -574,14 +579,23 @@
 
   &__input {
     border: none;
-    box-shadow: 0 0.4rem 2rem rgba($color-dark-text, 0.3);
+    box-shadow: 0 0.4rem 2rem rgba($color-dark-text, 0.1);
 
     padding: 1rem;
     width: 100%;
     font-size: inherit;
 
+    @media only screen and (max-width: $bp-831) {
+      border-bottom: 1px solid rgba($color-dark-text, 0.2);
+      box-shadow: none;
+    }
+
     &--name {
       height: 4rem;
+
+      @media only screen and (max-width: $bp-831) {
+        border-top: 1px solid rgba($color-dark-text, 0.2);
+      }
 
       &:focus {
         outline: none;
@@ -590,6 +604,11 @@
     }
     &--comment {
       height: 8rem;
+
+      @media only screen and (max-width: $bp-831) {
+        border-left: 1px solid rgba($color-dark-text, 0.2);
+        border-right: 1px solid rgba($color-dark-text, 0.2);
+      }
 
       &:focus {
         outline: none;
