@@ -8,9 +8,9 @@
 
   @media only screen and (max-width: $bp-565) {
     grid-template-columns:
-      minmax(2rem, 1fr)
-      minmax(min-content, 50rem)
-      minmax(2rem, 1fr);
+      2rem
+      1fr
+      2rem;
   }
 
   &__content {
@@ -719,9 +719,6 @@
       @media only screen and (max-width: $bp-320) {
         left: 25rem;
       }
-      @media only screen and (max-width: $bp-220) {
-        left: 26rem;
-      }
     }
   }
 }
@@ -762,10 +759,6 @@
   position: absolute;
   top: 0.1rem;
   left: 22rem;
-
-  @media only screen and (max-width: $bp-220) {
-    left: 25.5rem;
-  }
 }
 .newUserCommentActive {
   height: 2.4rem;
@@ -776,10 +769,6 @@
   position: absolute;
   top: 0.1rem;
   left: 22rem;
-
-  @media only screen and (max-width: $bp-220) {
-    left: 25.5rem;
-  }
 }
 
 //slider
@@ -816,10 +805,13 @@
 }
 
 .swiper-button-next,
-.swiper-button-prev {
+.swiper-button-prev,
+.swiper-button-next::after,
+.swiper-button-prev::after {
   border: none;
   background-color: transparent;
   color: $color-grey-shades !important;
+  top: 11rem;
 }
 
 .swiper-button-next::after,

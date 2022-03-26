@@ -8,9 +8,9 @@
 
   @media only screen and (max-width: $bp-565) {
     grid-template-columns:
-      minmax(2rem, 1fr)
-      minmax(min-content, 50rem)
-      minmax(2rem, 1fr);
+      2rem
+      1fr
+      2rem;
   }
 
   &__heading {
@@ -41,7 +41,7 @@
       url("../img/tour1x1000.jpg") 2x
     );
     background-size: cover;
-    background-position: center;
+    background-position: 50% 40%;
   }
 
   &__2 {
@@ -55,7 +55,7 @@
       url("../img/tour2x1000.jpg") 2x
     );
     background-size: cover;
-    background-position: center;
+    background-position: 40% 30%;
   }
 
   &__3 {
@@ -69,7 +69,7 @@
       url("../img/tour3x1000.jpg") 2x
     );
     background-size: cover;
-    background-position: center;
+    background-position: 50% 40%;
   }
 
   &__4 {
@@ -97,7 +97,7 @@
       url("../img/tour5x1000.jpg") 2x
     );
     background-size: cover;
-    background-position: center;
+    background-position: 50% 90%;
   }
 
   &__6 {
@@ -167,7 +167,7 @@
       url("../img/tour10x1000.jpg") 2x
     );
     background-size: cover;
-    background-position: center;
+    background-position: top;
   }
 
   &__11 {
@@ -181,7 +181,7 @@
       url("../img/tour11x1400.jpg") 2x
     );
     background-size: cover;
-    background-position: center;
+    background-position: 50% 10%;
   }
 
   &__12 {
@@ -195,6 +195,6 @@
       url("../img/tour12x1000.jpg") 2x
     );
     background-size: cover;
-    background-position: center;
+    background-position: 50% 90%;
   }
 }

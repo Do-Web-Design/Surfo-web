@@ -19,7 +19,6 @@ $bp-700: 43.75em;
 $bp-565: 35.31em;
 $bp-390: 24.375em;
 $bp-320: 20em;
-$bp-220: 13.75em;
 
 *,
 *::before,
@@ -43,10 +42,6 @@ html {
 
   @media only screen and (max-width: $bp-320) {
     font-size: 30%;
-  }
-
-  @media only screen and (max-width: $bp-220) {
-    font-size: 22%;
   }
 }
 
@@ -87,15 +82,15 @@ body {
   @media only screen and (max-width: $bp-1260) {
     grid-template-columns:
       minmax(2rem, 1fr)
-      minmax(min-content, 140rem)
+      minmax(min-content, 120rem)
       minmax(2rem, 1fr);
   }
 
   @media only screen and (max-width: $bp-565) {
     grid-template-columns:
-      minmax(2rem, 1fr)
-      minmax(min-content, 50rem)
-      minmax(2rem, 1fr);
+      2rem
+      1fr
+      2rem;
   }
 }
 

@@ -41,9 +41,19 @@
     &--searched {
       grid-row: 2/3;
       margin: 6rem;
+
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(26rem, 28rem));
+      grid-template-columns: 1fr 1fr 1fr;
+
       gap: 5rem;
+
+      @media only screen and (max-width: $bp-1000) {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      @media only screen and (max-width: $bp-831) {
+        grid-template-columns: 1fr;
+      }
     }
   }
 
@@ -374,7 +384,7 @@
       url("../img/tour9x1000.jpg") 2x
     );
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
   }
   &__3 {
     background-image: url(../img/tour10x1000.jpg);
@@ -435,16 +445,8 @@
 
 @media only screen and (max-width: $bp-1260) {
   .cardLargeHidden,
+  .cardMediumHidden,
   .cardSmallHidden {
-    display: none;
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-  }
-}
-
-@media only screen and (max-width: $bp-1000) {
-  .cardMediumHidden {
     display: none;
     visibility: hidden;
     opacity: 0;

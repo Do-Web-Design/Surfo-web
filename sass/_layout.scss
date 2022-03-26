@@ -152,16 +152,9 @@
 
   @media only screen and (max-width: $bp-565) {
     grid-template-columns:
-      minmax(1rem, 1fr)
-      minmax(min-content, 50rem)
-      minmax(1rem, 1fr);
-  }
-
-  @media only screen and (max-width: $bp-390) {
-    grid-template-columns:
-      minmax(0rem, 1fr)
-      minmax(min-content, 50rem)
-      minmax(0rem, 1fr);
+      2rem
+      1fr
+      2rem;
   }
 }
 
@@ -222,7 +215,7 @@
     }
 
     @media only screen and (max-width: $bp-565) {
-      grid-template-columns: repeat(2, 20rem);
+      grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(5, 1fr);
     }
   }
@@ -452,7 +445,6 @@
   padding: 0 4px;
   line-height: 29px;
   font-size: 0.4rem;
-  // height: 50rem;
 }
 
 .select2-container .select2-dropdown {
@@ -461,7 +453,6 @@
   font-size: 1.5rem;
   font-weight: 500;
   color: $color-dark-text;
-  // height: 50rem;
 }
 
 .select2-container .select2-dropdown .select2-search input {
@@ -554,16 +545,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
   @media only screen and (max-width: $bp-565) {
     grid-template-columns:
-      minmax(3rem, 1fr)
-      minmax(40rem, 140rem)
-      minmax(3rem, 1fr);
-  }
-
-  @media only screen and (max-width: $bp-320) {
-    grid-template-columns:
-      minmax(2rem, 1fr)
-      minmax(20rem, 40rem)
-      minmax(2rem, 1fr);
+      2rem
+      1fr
+      2rem;
   }
 
   &__content {
