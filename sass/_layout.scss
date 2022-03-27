@@ -111,13 +111,13 @@
   grid-column: 1/-1;
   grid-row: 1/2;
 
-  background-image: url(../img/hero-2000.jpg);
+  background-image: url(../img/hero-500.jpg);
   background-image: -webkit-image-set(
-    url("../img/hero-1400.jpg") 1x,
+    url("../img/hero-500.jpg") 1x,
     url("../img/hero-2000.jpg") 2x
   );
   background-image: image-set(
-    url("../img/hero-1400.jpg") 1x,
+    url("../img/hero-500.jpg") 1x,
     url("../img/hero-2000.jpg") 2x
   );
   background-size: cover;
@@ -470,8 +470,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border-width: thin;
   cursor: pointer;
 
-  -webkit-appearance: none;
-
   @media only screen and (max-width: $bp-565) {
     visibility: hidden;
     display: none;
@@ -481,13 +479,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .cta {
   grid-column: 1/-1;
 
-  background-image: url(../img/cta-2000.jpg);
+  background-image: url(../img/cta-500.jpg);
   background-image: -webkit-image-set(
-    url("../img/cta-1400.jpg") 1x,
+    url("../img/cta-500.jpg") 1x,
     url("../img/cta-2000.jpg") 2x
   );
   background-image: image-set(
-    url("../img/cta-1400.jpg") 1x,
+    url("../img/cta-500.jpg") 1x,
     url("../img/cta-2000.jpg") 2x
   );
   background-size: cover;
