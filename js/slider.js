@@ -36,7 +36,7 @@ function sliderTestimonial(swiperContainer, next, prev) {
     },
 
     breakpoints: {
-      420: {
+      390: {
         slidesPerView: 2,
         spaceBetween: 30,
       },

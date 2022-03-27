@@ -15,7 +15,7 @@ bookmarkContainer.classList.add("hidden");
 iconNav.addEventListener("click", function () {
   bookmarkContainer.classList.remove("hidden");
 
-  if (window.matchMedia("(max-width: 24.375em)").matches) {
+  if (window.matchMedia("(max-width: 51.95em)").matches) {
     mainSection.classList.add("hidden");
     offerSection.classList.add("hidden");
     toursSection.classList.add("hidden");
