@@ -681,6 +681,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       visibility: hidden;
       display: none; } }
 
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none;
+  appearance: none; }
+
 .cta {
   grid-column: 1/-1;
   background-image: url(../img/cta-500.jpg);
