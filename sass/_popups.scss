@@ -15,12 +15,11 @@
     left: 10rem;
     top: 15rem;
     max-height: 100vh;
-    // width: max-content;
-    @media only screen and (max-width: $bp-565) {
-      right: 0;
-      left: 0;
-      box-shadow: none;
-    }
+  }
+  @media only screen and (max-width: $bp-565) {
+    right: 0;
+    left: 0;
+    box-shadow: none;
   }
 
   &::-webkit-scrollbar {

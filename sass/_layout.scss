@@ -176,6 +176,7 @@
 
     @media only screen and (max-width: $bp-565) {
       grid-template-columns: 1fr;
+      padding-top: 20rem;
     }
   }
 }
@@ -468,6 +469,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   height: 30px;
   border-width: thin;
   cursor: pointer;
+
+  -webkit-appearance: none;
 
   @media only screen and (max-width: $bp-565) {
     visibility: hidden;

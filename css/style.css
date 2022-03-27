@@ -447,7 +447,8 @@ body {
     grid-row-gap: 3rem; }
     @media only screen and (max-width: 35.31em) {
       .header__content {
-        grid-template-columns: 1fr; } }
+        grid-template-columns: 1fr;
+        padding-top: 20rem; } }
 
 .search {
   margin: 0rem 6rem;
@@ -674,7 +675,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   width: 30px;
   height: 30px;
   border-width: thin;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-appearance: none; }
   @media only screen and (max-width: 35.31em) {
     input[type="date"]::-webkit-calendar-picker-indicator {
       visibility: hidden;
@@ -1087,7 +1089,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       left: 10rem;
       top: 15rem;
       max-height: 100vh; } }
-  @media only screen and (max-width: 51.95em) and (max-width: 35.31em) {
+  @media only screen and (max-width: 35.31em) {
     .bookmarks {
       right: 0;
       left: 0;
@@ -1523,7 +1525,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         padding: 2rem; } }
     @media only screen and (max-width: 35.31em) {
       .tour__details {
-        height: 54rem;
+        height: max-content;
         display: flex;
         flex-direction: column; } }
     .tour__details--save {
@@ -1567,7 +1569,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         align-self: flex-start; } }
     .tour__details--days {
       display: flex;
-      align-content: flex-end;
+      align-items: center;
       gap: 5rem; }
       @media only screen and (max-width: 43.75em) {
         .tour__details--days {

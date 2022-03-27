@@ -211,7 +211,6 @@
 
     @media only screen and (max-width: $bp-700) {
       height: 43rem;
-
       grid-row: 2/3;
 
       display: grid;
@@ -223,7 +222,7 @@
     }
 
     @media only screen and (max-width: $bp-565) {
-      height: 54rem;
+      height: max-content;
 
       display: flex;
       flex-direction: column;
@@ -286,7 +285,7 @@
 
     &--days {
       display: flex;
-      align-content: flex-end;
+      align-items: center;
       gap: 5rem;
 
       @media only screen and (max-width: $bp-700) {
