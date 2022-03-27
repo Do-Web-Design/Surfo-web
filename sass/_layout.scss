@@ -173,6 +173,10 @@
     display: grid;
     justify-content: center;
     grid-row-gap: 3rem;
+
+    @media only screen and (max-width: $bp-390) {
+      grid-template-columns: 1fr;
+    }
   }
 }
 

@@ -595,6 +595,7 @@
 
       @media only screen and (max-width: $bp-831) {
         border-top: 1px solid rgba($color-dark-text, 0.2);
+        border-radius: 1px;
       }
 
       &:focus {
@@ -608,6 +609,7 @@
       @media only screen and (max-width: $bp-831) {
         border-left: 1px solid rgba($color-dark-text, 0.2);
         border-right: 1px solid rgba($color-dark-text, 0.2);
+        border-radius: 1px;
       }
 
       &:focus {

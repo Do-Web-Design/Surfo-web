@@ -98,6 +98,10 @@
     display: inline-block;
     transition: all 0.2s;
 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
     @media only screen and (max-width: $bp-565) {
       top: 1.7rem;
       right: 1.5rem;

@@ -3,6 +3,9 @@ import { CleanCardsOffer } from "./searchbar.js";
 const mainSection = document.querySelector(".mainSection");
 const offerSection = document.querySelector(".offerSection");
 const toursSection = document.querySelector(".toursSection");
+const footerSection = document.querySelector(".footer");
+
+const bookmarkContainer = document.getElementById("popup__bookmarks");
 
 const tourContainersAll = document.querySelectorAll(".tourContainer");
 
@@ -27,6 +30,9 @@ btnOurOffer.addEventListener("click", function () {
   mainSection.classList.add("hidden");
   toursSection.classList.add("hidden");
   offerSection.classList.remove("hidden");
+  footerSection.classList.remove("hidden");
+
+  bookmarkContainer.classList.add("hidden");
 
   offerHeadingMain.innerHTML = "Adventures with us";
   offerHeadingSecond.classList.add("hidden");
@@ -43,6 +49,9 @@ btnLogo.addEventListener("click", function () {
   mainSection.classList.remove("hidden");
   offerSection.classList.add("hidden");
   toursSection.classList.add("hidden");
+  footerSection.classList.remove("hidden");
+
+  bookmarkContainer.classList.add("hidden");
 
   CleanCardsOffer();
   window.scrollTo(0, 0);
@@ -57,6 +66,10 @@ const clickBtnsToSeeTour = function (btn, container) {
       mainSection.classList.add("hidden");
       offerSection.classList.add("hidden");
       toursSection.classList.remove("hidden");
+      footerSection.classList.remove("hidden");
+
+      bookmarkContainer.classList.add("hidden");
+
       for (const el of tourContainersAll) el.classList.add("hidden");
       window.scrollTo(0, 0);
 

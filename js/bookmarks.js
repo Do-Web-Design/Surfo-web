@@ -2,6 +2,10 @@ const bookmarkContainer = document.getElementById("popup__bookmarks");
 const bookmarksListItem = document.querySelectorAll(".bookmarks__content");
 const iconNav = document.querySelector(".icon__save--nav");
 
+const mainSection = document.querySelector(".mainSection");
+const offerSection = document.querySelector(".offerSection");
+const toursSection = document.querySelector(".toursSection");
+const footerSection = document.querySelector(".footer");
 ///////////////////////////////////////////////////////////////////////////////////////
 
 // click on bookmarks nav and see the list of bookmarks
@@ -10,6 +14,13 @@ bookmarkContainer.classList.add("hidden");
 
 iconNav.addEventListener("click", function () {
   bookmarkContainer.classList.remove("hidden");
+
+  if (window.matchMedia("(max-width: 24.375em)").matches) {
+    mainSection.classList.add("hidden");
+    offerSection.classList.add("hidden");
+    toursSection.classList.add("hidden");
+    footerSection.classList.add("hidden");
+  }
 });
 
 bookmarkContainer.onmouseleave = function () {
