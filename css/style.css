@@ -616,7 +616,7 @@ body {
 .select2.select2-container .select2-selection .select2-selection__arrow {
   -webkit-border-radius: 0 3px 3px 0;
   -moz-border-radius: 0 3px 3px 0;
-  border-radius: 0px 3px 3px 0;
+  border-radius: 0px 13px 13px 0;
   height: 100%;
   width: 4rem; }
 
@@ -668,7 +668,6 @@ ul
 input[type="date"]::-webkit-calendar-picker-indicator {
   color: #161616;
   opacity: 1;
-  display: block;
   background-image: url(../img/icon_calendar.png);
   background-size: cover;
   background-position: center;
@@ -678,16 +677,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   cursor: pointer; }
   @media only screen and (max-width: 35.31em) {
     input[type="date"]::-webkit-calendar-picker-indicator {
-      visibility: hidden;
-      display: none; } }
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      padding-right: 1rem;
+      margin: 0; } }
 
-input[type="date"]::-webkit-inner-spin-button,
-input[type="date"]::-webkit-outer-spin-button,
-input[type="date"]::-webkit-calendar-picker-indicator {
-  display: none !important;
-  -webkit-appearance: none !important;
-  -moz-appearance: none;
-  appearance: none; }
+.search__item--depart,
+.search__item--return {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield; }
 
 .cta {
   grid-column: 1/-1;
@@ -735,7 +734,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(2, max-content);
         gap: 2rem;
-        row-gap: 14rem; } }
+        row-gap: 5rem; } }
   .footer__media {
     grid-column: 1/2;
     display: flex;
@@ -1066,8 +1065,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .cardSmallHidden {
     display: none;
     visibility: hidden;
-    opacity: 0;
-    pointer-events: none; } }
+    opacity: 0; } }
 
 @media only screen and (max-width: 51.95em) {
   .cardSmallHidden {
@@ -1077,8 +1075,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .cardLargeHidden2 {
     display: none;
     visibility: hidden;
-    opacity: 0;
-    pointer-events: none; } }
+    opacity: 0; } }
 
 .bookmarks {
   max-height: 40rem;
@@ -1790,7 +1787,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     box-shadow: 0 0.4rem 2rem rgba(22, 22, 22, 0.1);
     padding: 1rem;
     width: 100%;
-    font-size: inherit; }
+    font-size: 1.7rem !important; }
     @media only screen and (max-width: 51.95em) {
       .comments__input {
         box-shadow: none;
